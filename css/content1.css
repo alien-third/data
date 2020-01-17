@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+.content_wrap{
+	width: 99.6%; display: block;
+}
+.welBarBn{ width: 980px; margin: 0 auto; }
+.welBarBn .clearfix{ 
+	display: flex; flex-direction: row; 
+}

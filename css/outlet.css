@@ -1,0 +1,9 @@
+@charset 'utf-8';
+.outlet_wrap{ width: 99.9%; display: block; }
+.outlet_container{
+	width: 980px; margin:0 auto;
+}
+.outlet_container h3{
+	display: block; width: inherit;
+	margin: 0 auto;
+}

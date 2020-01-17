@@ -1,0 +1,41 @@
+#nav1{
+    display: flex; flex-direction: row; 
+    align-items: center;
+    width:980px; margin:0 auto; 
+}
+#nav1 .item a{ text-decoration: none; color:black; }
+#nav1 .item:nth-child(1){
+    order:1;
+    width: 160px; padding:10px 0; 
+    background: red; text-align: center; font-weight: bold; font-size: 0.9em;
+    
+}
+#nav1 .item:nth-child(2){ order:2; padding:0 10px; }
+#nav1 .item:nth-child(3){ flex:2; order:3; }
+#nav1 .item:nth-child(4){ flex:1; order:4; border:1px solid black; }
+#nav1 .item:nth-child(1) a{
+    color:white; font-weight:bold;
+    text-decoration: none;
+}
+#nav1 .item:nth-child(2) span a{
+    font-size: 0.9em; font-weight: bold; border-right:1px solid black; padding-right:20px; line-height: 2px;
+}
+#nav1 .item:nth-child(3) .listMenu{ 
+    display: flex; order:3;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+}
+#nav1 .item:nth-child(3) .listMenu li{
+    justify-self: center; align-self: center;
+    font-size: 0.8em;
+    padding:0 5px 0 5px;
+}
+#nav1 .item:nth-child(3) .listMenu li a{
+    height:20px; line-height: 20px;
+}
+
+#nav1 .item:nth-child(4) #ranking{
+    width:200px;
+    text-align: right;
+}

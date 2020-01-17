@@ -1,0 +1,236 @@
+@charset 'UTF-8';
+.top_wrap{ 
+	width:99.9%; display:block;
+}
+#top{ 
+    display: flex; 
+    flex-direction: row;
+	justify-content: space-between;
+    align-items: flex-start; 
+	width:980px;  margin:0 auto;
+}
+#top > .item{
+	font-size:0.8em;
+	padding:5px 0 5px 0;
+}
+#top > .item:nth-child(1){
+	flex:1;
+	order:1;
+}
+#top > .item:nth-child(2){
+	flex:1;
+	text-align: right;
+	order:2;
+}
+#top a{ padding-right:5px; color:rgba(26,26,26,1); } #top a:hover{ color: white; } 
+#top a:link, #top a:visited { text-decoration: none; } #top a:hover{ color: #FFDB4D; }
+#top > .item:nth-child(2) > a:nth-child(4){ 
+	padding:0 0 0 10px;  border-left:thin solid black; display:inline-block; line-height:100%;
+}
+
+#header{ 
+    display: flex; flex-direction: row;
+	justify-content: space-between;
+	align-items: center; 
+	width:980px; margin:0 auto;
+	font-size: 1.2em;
+}
+#header .item{
+	justify-self: center;
+	align-self: center;
+}
+#header .item:nth-child(1){
+	flex:1; order:1;
+	justify-self: center;
+	align-self: center;
+	vertical-align:middle;
+}
+#header .item:nth-child(1) #logo, #header .item:nth-child(1) #logo:hover, #header .item:nth-child(1) #logo:visited{ 
+    width:160px;
+	font-weight: bold;
+	color:#000;
+}
+#header .item:nth-child(1) #logo:active{ color:#FF33FF }
+#header .item:nth-child(2){
+    flex:4; order:2;
+	justify-self: center;
+	align-self: center;
+}
+#header .item:nth-child(2) #search{
+	display: flex; 
+    width: 400px; margin: 0 auto;
+	/* grid-template-columns: 70fr 30fr; */
+}
+
+#header .item:nth-child(3){
+    flex:1.5; order:3;
+	background-color:rgba(255, 255, 153, 0.5);
+    width:250px; height:70px; border:1px solid black;
+}
+#header #logo{ 
+	width:140px; display:inline-block; color:black;
+	padding:30px 0; font-size:1.2em; text-align:center;
+}
+#header #logo:hover{ 
+	color: white;
+}
+
+#header .item:nth-child(2) #search input[type=text]{ 
+	width:300px;
+	height:30px;
+}
+#header .item:nth-child(2) #search input[type=button]{ 
+	width:50px;
+	height:30px; 
+}
+
+
+#nav1{
+    display: flex; flex-direction: row; 
+    align-items: center;
+    width:980px; margin:0 auto; 
+}
+#nav1 .item a{ text-decoration: none;  }
+#nav1 .item:nth-child(1){
+    order:1; 
+    width: 160px; padding:10px 0; 
+    background: red; 
+    text-align: center; font-weight: bold; font-size: 0.9em;
+    
+}
+
+#nav1 .item:nth-child(2){ order:2; padding:0 10px; }
+#nav1 .item:nth-child(3){ flex:2; order:3; }
+#nav1 .item:nth-child(4){ flex:1; order:4; border:1px solid black; }
+#nav1 .item:nth-child(1) a{
+    color:white; font-weight:bold;
+    text-decoration: none;
+}
+#nav1 .item:nth-child(2) span a{
+    color:red; font-size: 0.9em; font-weight: bold; border-right:1px solid black; padding-right:20px; line-height: 2px;
+}
+#nav1 .item:nth-child(3) .listMenu{ 
+    display: flex; order:3;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+}
+#nav1 .item:nth-child(3) .listMenu li{
+    justify-self: center; align-self: center;
+    font-size: 0.8em;
+    padding:0 5px 0 5px;
+}
+#nav1 .item:nth-child(3) .listMenu li a{
+    height:20px; line-height: 20px;
+}
+
+#nav1 .item:nth-child(4) #ranking{
+    width:200px;
+    text-align: right;
+}
+
+.nav_wrap{ width:99.9%; display:block; background-color: #333; }
+#nav-container{ 
+    width: 980px; margin:0 auto;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#nav-container .inner:nth-child(1){
+    flex: 1; order:1;
+    font-weight: bold;
+    flex-direction: column;
+    width: 160px;
+}
+.inner:nth-child(1) #welMenu li{
+    border-bottom: 1px solid #1a244d;
+    width:160px;
+}
+.inner:nth-child(1) #welMenu li a{
+    background:rgba(30,70,60,1); color:white;
+    display: block; padding:10px 0 10px 10px;
+    text-decoration: none;
+}
+.inner:nth-child(1) #welMenu li a:hover{
+    background-color: white; color:black;
+}
+.inner:nth-child(1) #welMenu li a:last-child{
+    padding-bottom: 10px;
+}
+.inner:nth-child(1) #lnk_Brandshop {
+    flex:1; order: 2;
+    width:160px;
+    display: flex; justify-content: space-around;
+    background-color: black;
+    font-size:0.8em;
+    height:168px;
+}
+.inner:nth-child(1) #lnk_Brandshop li{
+    padding:10px 0;
+}
+.inner:nth-child(1) #lnk_Brandshop li a{
+    text-align: left; color:white;
+    text-decoration: none;
+}
+.inner:nth-child(1) #lnk_Brandshop li a:hover{
+    text-decoration: underline;
+    padding:0 -10px 0 -10px;
+}
+
+.inner:nth-child(2){
+    flex: 2; order:2;
+    width:820px;
+    position: relative;
+}
+
+#lnk_Brandshop {
+    flex:1; order: 2;
+    width:160px;
+    display: flex; justify-content: space-around;
+    background-color: black;
+    font-size:0.8em;
+    height:168px;
+}
+
+.slider-container{
+  width: 820px; 
+  margin:0 auto;
+  
+}
+.slider{
+  width:820px;
+  height:390px;
+  margin:0 auto;
+}
+.slider img{ width:100%; }
+.prev, .next{
+  background: rgba(255,255,255,.5);
+  position:absolute;
+  width: 30px;
+  height: 60px;
+  top: 150px;
+  border: none;
+  cursor: pointer;
+  transition: all .25s;
+  font-weight: bold;
+}
+.next{ right: 0;}
+.prev:hober, next:hover{ background:rgba(255,255,255,.75); }
+
+button:focus{ outline: 0; }
+.btn-nav.active{
+  background-color: #333;
+}
+.slider-nav{ text-align:center; }
+.btn-nav{
+	border:0;
+	width:10px;
+	height:10px;
+	border-radius: 10px;
+	padding: 0;
+	cursor: pointer;
+}
+.btn-nav.active{
+	background-color: #333;
+}
