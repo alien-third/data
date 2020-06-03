@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{ padding:0; margin:0; list-style: none; box-sizing: border-box; }
+h1, h2, h3, h4, h5{ margin:0; padding:0; }
+
+/* body{ min-width:100%; background: url('../img/metart.jpg') 50% 50% no-repeat; background-size:100%; padding:auto; margin-top:-4px; } */
+
+div{ box-sizing: border-box; }
+.wrap{ width:800px; margin:0 auto; display: block; border:1px solid #000; }
+.list{ min-width:600px; max-width:80%; margin:0 auto; }
+.form_wrap{ width:500px; margin:100px auto; }
+.form_wrap input[type="submit"]{margin-left: 120px; width:378px; }
+img{ margin:0; padding:0; border:none; }
+img:after{content:'' display:block; clear:both; border:none; padding:0; margin:0; }
+.wrap .contents:after{ content:''; display: block; clear:both; }
+ul{ border:none; }
+ul:after{ content:""; display: block; clear:both; }
+ul.th, ul.td{ display: flex; min-width:600px; align-items: center; } ul.th{ font-weight:bold; }
+li{ align-items: center; flex:1; box-sizing: border-box; border:1px solid #ccc; text-align:center; }
+
+select { 
+	width: 80px; /* 원하는 너비설정 */ 
+	padding: .4em .5em; /* 여백으로 높이 설정 */ 
+	font-family: inherit; /* 폰트 상속 */ 
+	background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%; /* 네이티브 화살표 대체 */ 
+	border: 1px solid #999; 
+	border-radius: 0px; /* iOS 둥근모서리 제거 */ 
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+	-moz-appearance: none; appearance: none; 
+}
+select::-ms-expand { display: none; }
+
+
+
+#checkId{ width:52.6%; }
+label{ width:120px; height:34px; padding-left:10px; display: inline-block; }
+input[type="text"], input[type="password"]{ width:75%; height:26px; display: inline-block; }
+input[type="tel"]{ 
+	width:56.9%; height:26px; display: inline-block; 
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+	-moz-appearance: none; appearance: none; 
+}
+input[type="submit"]{ 
+	width:90%; height:30px; 
+	box-sizing: border-box;
+} 
+
+input{ 
+  background: -webkit-linear-gradient(#ffffff, #ececec); 
+  background: -o-linear-gradient(#ffffff, #ececec);
+  background: -moz-linear-gradient(#ffffff, #ececec); 
+  background: linear-gradient(#ffffff, #ececec); 
+  border-top:none; border-left:none;
+}
+.input {//그라데이션과 이미지 넣기, 콤마로 구분하기
+  background: url(../images/test.png),
+  linear-gradient(to right, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 1)),
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, left;
+}
+
+button, button::after {
+ 	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+	box-sizing:border-box;
+	background: #f0f;
+	border: 3px solid #f0f;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: .6em;
+	font-weight: bold;
+	margin: 1em auto;
+	padding: .6em 2em;
+  /* position: relative; */
+  text-transform: uppercase;
+}
+
+button::before, button::after { background: #fff;  content: ''; }
+button:hover {  color: #000; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
